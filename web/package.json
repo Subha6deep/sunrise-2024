@@ -10,8 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/antd": "^1.0.0",
+    "@types/react-beautiful-dnd": "^13.1.8",
+    "antd": "^5.20.0",
     "next": "14.2.5",
     "react": "^18",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18"
   },
   "devDependencies": {

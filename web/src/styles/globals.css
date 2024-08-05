@@ -105,3 +105,17 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Task Manager specific styles */
+.task-manager {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+
+
+
+

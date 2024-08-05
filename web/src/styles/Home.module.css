@@ -1,10 +1,64 @@
-.main {
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.taskContainers {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.taskSection {
+  flex: 1;
+  min-width: 300px; /* Adjust based on your design */
+  max-width: 100%;
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0.1);
+  transition: background 200ms, border 200ms;
+}
+
+.taskItem.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.taskItem button {
+  margin-left: 1rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background: #0071ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.taskItem button:hover {
+  background: #005bb5;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 700px) {
+  .taskContainers {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -227,3 +281,5 @@
     transform: rotate(0deg);
   }
 }
+
+
